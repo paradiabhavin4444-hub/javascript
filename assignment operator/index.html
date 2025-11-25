@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            .heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0 0 10px #ca4e07;
+}
+            #value1, #value2, #output {
+  width: 300px;
+}body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(135deg, #fafaff, #000000);
+    font-family: "Poppins", sans-serif;
+}
+
+.form-control{
+    width: 35%;
+}
+        .calc-box input {
+            width: 300px;
+            height: 45px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            margin-bottom: 12px;
+            padding: 10px;
+            font-size: 18px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        ::placeholder {
+            color: #ee9595;
+        }
+
+    
+        </style>
+</head>
+
+<body>
+    <h1 class="heading">🧮 Calculator</h1>
+    <div class="form-control shadow">
+        <form class="b text-center">
+            <div class="p-3">
+                <input type="text" placeholder="Enter value 1" id="value1">
+            </div>
+            <div class="p-3">
+                <input type="text" placeholder="Enter value 2" id="value2">
+            </div>
+            <div class="p-3" >
+                <input type="text" placeholder="output" id="output">
+            </div>
+            <div class="mt-3">
+                <button type="button" class="btn-success" onclick="add()">+</button>
+                <button type="button" class="btn-danger" onclick="sub()">-</button>
+                <button type="button" class="btn-info" onclick="multi()">*</button>
+                <button type="button" class="btn-secondary" onclick="div()">/</button>
+                <button type="button" class="btn-warning" onclick="mod()">%</button>
+                
+
+
+            </div>
+
+        </form>
+    </div>
+    <script>
+        function add() {
+            let value1 = document.getElementById(`value1`).value;
+            let value2 = document.getElementById(`value2`).value;
+
+            value1 = Number(value1)
+            value2 = Number(value2)
+
+            console.log((value1+value2).toFixed(2))
+
+            const result = `Addition of ${value1} and ${value2} = ${value1 + value2}`
+            // document.getElementById(`result`).innerHTML = result;
+
+            document.getElementById(`output`).value=result;
+
+
+        }
+         function sub() {
+            let value1 = document.getElementById(`value1`).value;
+            let value2 = document.getElementById(`value2`).value;
+
+            value1 = Number(value1)
+            value2 = Number(value2)
+
+            console.log((value1+value2).toFixed(2))
+
+            const result = `sub ${value1} and ${value2} = ${value1 - value2}`
+            // document.getElementById(`result`).innerHTML = result;
+
+            document.getElementById(`output`).value=result;
+
+
+        }
+         function multi() {
+            let value1 = document.getElementById(`value1`).value;
+            let value2 = document.getElementById(`value2`).value;
+
+            value1 = Number(value1)
+            value2 = Number(value2)
+
+            console.log((value1+value2).toFixed(2))
+
+            const result = `multiply of ${value1} and ${value2} = ${value1 * value2}`
+            // document.getElementById(`result`).innerHTML = result;
+
+            document.getElementById(`output`).value=result;
+
+
+        }
+         function div() {
+            let value1 = document.getElementById(`value1`).value;
+            let value2 = document.getElementById(`value2`).value;
+
+            value1 = Number(value1)
+            value2 = Number(value2)
+
+            console.log((value1+value2).toFixed(2))
+
+            const result = `div ${value1} and ${value2} = ${value1 / value2}`
+            // document.getElementById(`result`).innerHTML = result;
+
+            document.getElementById(`output`).value=result;
+
+
+        }
+        function mod() {
+            let value1 = document.getElementById(`value1`).value;
+            let value2 = document.getElementById(`value2`).value;
+
+            value1 = Number(value1)
+            value2 = Number(value2)
+
+            console.log((value1+value2).toFixed(2))
+
+            const result = `moduls ${value1} and ${value2} = ${value1 % value2}`
+            // document.getElementById(`result`).innerHTML = result;
+
+            document.getElementById(`output`).value=result;
+
+
+        }
+    </script>
+</body>
+
+</html>
