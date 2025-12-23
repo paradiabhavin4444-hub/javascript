@@ -1,0 +1,33 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+.slider  img{
+    height: 800px;
+    width: 100%;
+}
+.btn1 {
+    position: absolute;
+    top: 50%;
+left: 1%;   
+padding: 10px;
+background-color: rgb(233, 233, 182);
+border-radius: 50px;
+
+
+}
+.btn2{
+    position: absolute;
+    top: 50%;
+   right: 1%;
+padding: 10px;
+border-radius: 50px;
+/* background-color: rgb(233, 233, 182); */
+background-color: rgb(233, 233, 182);
+/* background-color: rgb(214, 255, 253); */
+}
+.container a{
+    color: rgb(11, 135, 207);
+}
+
