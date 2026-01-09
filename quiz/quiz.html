@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body> 
+   <div class="my-5 p-5 ">
+     <h2 id="questions"></h2>
+    <div>
+        <input type="radio" class="form-check-input" name="option" value="0">
+        <span id="option1"></span>
+    </div>
+    <div>
+        <input type="radio" class="form-check-input" name="option" value="2">
+        <span id="option2"></span>
+    </div>
+    <div>
+        <input type="radio" class="form-check-input" name="option" value="2">
+        <span id="option3"></span>
+    </div>
+    <div>
+        <input type="radio" class="form-check-input" name="option" value="3">
+        <span id="option4"></span>
+    </div>
+    <div class="btn-group mt-5">
+         <button class="btn btn-warning" id="prev" onclick="prevQuestion()">Prev</button>
+         <button class="btn btn-succes" id="next" onclick="nextQuestion()">Next</button>
+         <button class="btn btn-primary" id="output" onclick="output()">Submit</button>
+    </div>
+   </div>
+    <script src = "quiz.js"></script>
+</body>
+
+</html>
